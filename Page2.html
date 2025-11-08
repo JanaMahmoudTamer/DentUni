@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DentUni - Our Team</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav>
+      <div class="nav-container">
+        <div class="logo-container">
+          <i
+            alt="DentUni Logo"
+            class="logo-img fa-solid fa-tooth contact-icon"
+            style="color: white; padding-top: 0.3em"
+          ></i>
+          <span class="logo-text">DentUni</span>
+        </div>
+        <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+          <i class="fas fa-bars"></i>
+        </button>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="page2.html" class="nav-link active">Our Team</a></li>
+          <li><a href="page3.html" class="nav-link">Programs</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero">
+      <div class="hero-content">
+        <div class="hero-text">
+          <h1>Meet Our Team</h1>
+          <p>
+            The passionate professionals driving innovation in dental education
+            across Egypt. Our multidisciplinary team brings together expertise
+            in training, content creation, marketing, and operations.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Team Page Content -->
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">
+          Our <span class="accent">Leadership Team</span>
+        </h2>
+        <p class="section-subtitle">
+          Dedicated professionals committed to transforming dental education in
+          Egypt
+        </p>
+      </div>
+
+      <div class="team-grid">
+        <div class="team-card">
+          <div class="team-avatar">MS</div>
+          <h3>Dr. Maryam Salah El Din</h3>
+          <p class="role">Training Director</p>
+        </div>
+
+        <div class="team-card">
+          <div class="team-avatar">MA</div>
+          <h3>Mohamed Ashraf</h3>
+          <p class="role">Content Creator</p>
+        </div>
+
+        <div class="team-card">
+          <div class="team-avatar">MW</div>
+          <h3>Menna Wael</h3>
+          <p class="role">Social Media</p>
+        </div>
+
+        <div class="team-card">
+          <div class="team-avatar">AN</div>
+          <h3>Ahmed Nasser Zalabia</h3>
+          <p class="role">Marketing</p>
+        </div>
+
+        <div class="team-card">
+          <div class="team-avatar">JE</div>
+          <h3>Jana Elgmal</h3>
+          <p class="role">Public Relations</p>
+        </div>
+
+        <div class="team-card">
+          <div class="team-avatar">AM</div>
+          <h3>Abdullah Mokhtar</h3>
+          <p class="role">Finance & Logistics</p>
+        </div>
+
+        <div class="team-card">
+          <div class="team-avatar">FB</div>
+          <h3>Farah Bassem</h3>
+          <p class="role">Operations</p>
+        </div>
+
+        <div class="team-card">
+          <div class="team-avatar">FT</div>
+          <h3>Farh Tamer</h3>
+          <p class="role">Customer Care</p>
+        </div>
+      </div>
+
+      <div class="contact-box">
+        <h3>Want to Join Our Team?</h3>
+        <p>
+          We're always looking for passionate professionals to join our mission
+        </p>
+        <div class="contact-grid">
+          <div class="contact-item">
+            <i class="fas fa-envelope contact-icon"></i>
+            <div class="contact-details">
+              <h4>Email Us</h4>
+              <p>dentuni.edu.eg@gmail.com</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-phone contact-icon"></i>
+            <div class="contact-details">
+              <h4>Call Us</h4>
+              <p>01558725889</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-map-marker-alt contact-icon"></i>
+            <div class="contact-details">
+              <h4>Location</h4>
+              <p>Cairo, Egypt</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <i
+        alt="DentUni Logo"
+        class="logo-img fa-solid fa-tooth contact-icon"
+        style="color: white; padding-top: 0.3em"
+      ></i>
+      <p>
+        <span class="footer-highlight">DentUni</span> - Hands-on Dental
+        Education
+      </p>
+      <p>Cairo, Egypt | Rooted in Ain Shams University</p>
+      <p style="margin-top: 1.5rem">
+        &copy; 2025 DentUni. All Rights Reserved.
+      </p>
+    </footer>
+
+    <script>
+      function toggleMobileMenu() {
+        document.getElementById("navLinks").classList.toggle("active");
+      }
+
+      document.addEventListener("click", function (event) {
+        const nav = document.querySelector("nav");
+        const navLinks = document.getElementById("navLinks");
+
+        if (
+          !nav.contains(event.target) &&
+          navLinks.classList.contains("active")
+        ) {
+          navLinks.classList.remove("active");
+        }
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DentUni - Hands-on Dental Education</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav>
+      <div class="nav-container">
+        <div class="logo-container">
+          <i
+            alt="DentUni Logo"
+            class="logo-img fa-solid fa-tooth contact-icon"
+            style="color: white; padding-top: 0.3em"
+          ></i>
+          <span class="logo-text">DentUni</span>
+        </div>
+        <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+          <i class="fas fa-bars"></i>
+        </button>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="index.html" class="nav-link active">Home</a></li>
+          <li><a href="page2.html" class="nav-link">Our Team</a></li>
+          <li><a href="page3.html" class="nav-link">Programs</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero">
+      <div class="hero-content">
+        <div class="hero-text">
+          <h1>Master Your Dental Skills</h1>
+          <p>
+            Transform your dental career through hands-on training, expert
+            mentorship, and real-world clinical experience. Join Cairo's premier
+            dental education platform rooted in Ain Shams University.
+          </p>
+          <div class="hero-buttons">
+            <a href="page3.html" class="btn btn-white">Explore Programs</a>
+            <a href="mailto:dentuni.edu.eg@gmail.com" class="btn btn-outline"
+              >Get in Touch</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Home Page Content -->
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">
+          Welcome to <span class="accent">DentUni</span>
+        </h2>
+        <p class="section-subtitle">
+          Cairo's leading platform for practical dental education, bridging the
+          gap between academic knowledge and clinical excellence
+        </p>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-card">
+          <i class="fas fa-bullseye card-icon"></i>
+          <h3>Our Mission</h3>
+          <p>
+            Bridging the gap between academic knowledge and real-world clinical
+            practice through innovative programs designed to strengthen
+            technical expertise, build confidence, and support long-term
+            professional growth.
+          </p>
+        </div>
+
+        <div class="about-card">
+          <i class="fas fa-university card-icon"></i>
+          <h3>Academic Foundation</h3>
+          <p>
+            Grounded in the academic legacy of Ain Shams University, we foster a
+            collaborative environment where talent meets opportunity, empowering
+            the next generation of dentists to excel.
+          </p>
+        </div>
+
+        <div class="about-card">
+          <i class="fas fa-globe-africa card-icon"></i>
+          <h3>Nationwide Reach</h3>
+          <p>
+            Beyond our Cairo base, we partner with universities across Egypt to
+            expand access to advanced dental training on a national scale,
+            reaching dental professionals throughout the country.
+          </p>
+        </div>
+
+        <div class="about-card">
+          <i class="fas fa-certificate card-icon"></i>
+          <h3>Professional Standards</h3>
+          <p>
+            As a privately established company with active commercial
+            registration and valid tax card, DentUni operates within a framework
+            of professionalism, credibility, and sustainability.
+          </p>
+        </div>
+
+        <div class="about-card">
+          <i class="fas fa-hands-helping card-icon"></i>
+          <h3>Hands-On Training</h3>
+          <p>
+            High-quality workshops and clinical training programs designed to
+            deliver real skills for dental students and early-career
+            practitioners through immersive, practical experiences.
+          </p>
+        </div>
+
+        <div class="about-card">
+          <i class="fas fa-graduation-cap card-icon"></i>
+          <h3>Vision for Excellence</h3>
+          <p>
+            Empowering the next generation of dental professionals to achieve
+            excellence in an ever-evolving field through continuous learning and
+            commitment to clinical mastery.
+          </p>
+        </div>
+      </div>
+
+      <div class="contact-box">
+        <h3>Ready to Start Your Journey?</h3>
+        <p>
+          Contact us for registration, program details, or partnership
+          opportunities
+        </p>
+        <div class="contact-grid">
+          <div class="contact-item">
+            <i class="fas fa-envelope contact-icon"></i>
+            <div class="contact-details">
+              <h4>Email Us</h4>
+              <p>dentuni.edu.eg@gmail.com</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-phone contact-icon"></i>
+            <div class="contact-details">
+              <h4>Call Us</h4>
+              <p>01558725889</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-map-marker-alt contact-icon"></i>
+            <div class="contact-details">
+              <h4>Location</h4>
+              <p>Cairo, Egypt</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <i
+        alt="DentUni Logo"
+        class="logo-img fa-solid fa-tooth contact-icon"
+        style="color: white; padding-top: 0.3em"
+      ></i>
+      <p>
+        <span class="footer-highlight">DentUni</span> - Hands-on Dental
+        Education
+      </p>
+      <p>Cairo, Egypt | Rooted in Ain Shams University</p>
+      <p style="margin-top: 1.5rem">
+        &copy; 2025 DentUni. All Rights Reserved.
+      </p>
+    </footer>
+
+    <script>
+      function toggleMobileMenu() {
+        document.getElementById("navLinks").classList.toggle("active");
+      }
+
+      document.addEventListener("click", function (event) {
+        const nav = document.querySelector("nav");
+        const navLinks = document.getElementById("navLinks");
+
+        if (
+          !nav.contains(event.target) &&
+          navLinks.classList.contains("active")
+        ) {
+          navLinks.classList.remove("active");
+        }
+      });
+    </script>
+  </body>
+</html>

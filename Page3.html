@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DentUni - Our Programs</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav>
+      <div class="nav-container">
+        <div class="logo-container">
+          <i
+            alt="DentUni Logo"
+            class="logo-img fa-solid fa-tooth contact-icon"
+            style="color: white; padding-top: 0.3em"
+          ></i>
+          <span class="logo-text">DentUni</span>
+        </div>
+        <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+          <i class="fas fa-bars"></i>
+        </button>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="page2.html" class="nav-link">Our Team</a></li>
+          <li><a href="page3.html" class="nav-link active">Programs</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero">
+      <div class="hero-content">
+        <div class="hero-text">
+          <h1>Our Training Programs</h1>
+          <p>
+            Comprehensive educational offerings designed to elevate your
+            clinical expertise and professional capabilities. From foundation
+            skills to advanced specializations.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Programs Page Content -->
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">
+          Explore Our <span class="accent">Programs</span>
+        </h2>
+        <p class="section-subtitle">
+          Hands-on training designed to transform your dental career
+        </p>
+      </div>
+
+      <div class="courses-grid">
+        <div class="course-card">
+          <div class="course-header">
+            <i class="fas fa-tooth"></i>
+            <h3>Foundation Workshops</h3>
+          </div>
+          <div class="course-body">
+            <ul>
+              <li>
+                <i class="fas fa-check-circle"></i> Training on modern dental
+                techniques
+              </li>
+              <li>
+                <i class="fas fa-check-circle"></i> Hands-on practice with
+                specialists
+              </li>
+              <li>
+                <i class="fas fa-check-circle"></i> Modern equipment training
+              </li>
+              <li>
+                <i class="fas fa-check-circle"></i> Essential clinical skills
+                development
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="course-card">
+          <div class="course-header">
+            <i class="fas fa-user-md"></i>
+            <h3>Advanced Training</h3>
+          </div>
+          <div class="course-body">
+            <ul>
+              <li>
+                <i class="fas fa-check-circle"></i> Advanced cosmetic techniques
+              </li>
+              <li>
+                <i class="fas fa-check-circle"></i> Modern dental implantology
+              </li>
+              <li>
+                <i class="fas fa-check-circle"></i> Advanced endodontic
+                treatment
+              </li>
+              <li>
+                <i class="fas fa-check-circle"></i> Fixed and removable
+                prosthodontics
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="course-card">
+          <div class="course-header">
+            <i class="fas fa-briefcase"></i>
+            <h3>Professional Development</h3>
+          </div>
+          <div class="course-body">
+            <ul>
+              <li>
+                <i class="fas fa-check-circle"></i> Clinic management and
+                patient service
+              </li>
+              <li>
+                <i class="fas fa-check-circle"></i> Patient communication skills
+              </li>
+              <li>
+                <i class="fas fa-check-circle"></i> Professional medical
+                marketing
+              </li>
+              <li>
+                <i class="fas fa-check-circle"></i> Personal brand building
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="course-card">
+          <div class="course-header">
+            <i class="fas fa-hospital"></i>
+            <h3>Clinical Training</h3>
+          </div>
+          <div class="course-body">
+            <ul>
+              <li>
+                <i class="fas fa-check-circle"></i> Practice under expert
+                supervision
+              </li>
+              <li><i class="fas fa-check-circle"></i> Real case management</li>
+              <li>
+                <i class="fas fa-check-circle"></i> Practical skills development
+              </li>
+              <li>
+                <i class="fas fa-check-circle"></i> Clinical confidence building
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="course-card">
+          <div class="course-header">
+            <i class="fas fa-stethoscope"></i>
+            <h3>Specialized Courses</h3>
+          </div>
+          <div class="course-body">
+            <ul>
+              <li>
+                <i class="fas fa-check-circle"></i> Specialized pediatric
+                dentistry
+              </li>
+              <li>
+                <i class="fas fa-check-circle"></i> Oral and maxillofacial
+                surgery
+              </li>
+              <li><i class="fas fa-check-circle"></i> Modern orthodontics</li>
+              <li><i class="fas fa-check-circle"></i> Periodontal treatment</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="course-card">
+          <div class="course-header">
+            <i class="fas fa-handshake"></i>
+            <h3>Partnership Programs</h3>
+          </div>
+          <div class="course-body">
+            <ul>
+              <li>
+                <i class="fas fa-check-circle"></i> University collaborations
+              </li>
+              <li>
+                <i class="fas fa-check-circle"></i> Workshops across Egypt
+              </li>
+              <li>
+                <i class="fas fa-check-circle"></i> Mobile training programs
+              </li>
+              <li>
+                <i class="fas fa-check-circle"></i> Accredited certifications
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="cta-section">
+        <h3>Ready to Advance Your Career?</h3>
+        <p>
+          Join dental professionals transforming their practice through
+          DentUni's training programs
+        </p>
+        <div class="cta-buttons">
+          <a href="mailto:dentuni.edu.eg@gmail.com" class="btn btn-white"
+            >Register Now</a
+          >
+          <a href="tel:01558725889" class="btn btn-outline">Contact Us</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <i
+        alt="DentUni Logo"
+        class="logo-img fa-solid fa-tooth contact-icon"
+        style="color: white; padding-top: 0.3em"
+      ></i>
+      <p>
+        <span class="footer-highlight">DentUni</span> - Hands-on Dental
+        Education
+      </p>
+      <p>Cairo, Egypt | Rooted in Ain Shams University</p>
+      <p style="margin-top: 1.5rem">
+        &copy; 2025 DentUni. All Rights Reserved.
+      </p>
+    </footer>
+
+    <script>
+      function toggleMobileMenu() {
+        document.getElementById("navLinks").classList.toggle("active");
+      }
+
+      document.addEventListener("click", function (event) {
+        const nav = document.querySelector("nav");
+        const navLinks = document.getElementById("navLinks");
+
+        if (
+          !nav.contains(event.target) &&
+          navLinks.classList.contains("active")
+        ) {
+          navLinks.classList.remove("active");
+        }
+      });
+    </script>
+  </body>
+</html>
