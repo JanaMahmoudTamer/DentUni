@@ -614,7 +614,7 @@ footer p {
     background: #cc0000;
     flex-direction: column;
     padding: 1rem;
-    gap: 0;
+    gap: 0.5em;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
   }
 
@@ -623,6 +623,7 @@ footer p {
   }
 
   .nav-links a {
+    padding: 0.4em;
     border-radius: 8px;
     margin-bottom: 0.5rem;
   }

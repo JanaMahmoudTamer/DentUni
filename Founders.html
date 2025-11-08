@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DentUni - Founders</title>
+    <link rel="stylesheet" href="fontawesome/css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav>
+      <div class="nav-container">
+        <div class="logo-container">
+          <i
+            alt="DentUni Logo"
+            class="logo-img fa-solid fa-tooth contact-icon"
+            style="color: white; padding-top: 0.3em"
+          ></i>
+          <span class="logo-text">DentUni</span>
+        </div>
+        <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+          <i class="fas fa-bars"></i>
+        </button>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="page3.html" class="nav-link">Programs</a></li>
+          <li><a href="founders.html" class="nav-link active">Founders</a></li>
+          <li><a href="page2.html" class="nav-link">Our Team</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Page Header -->
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">
+          Meet the <span class="accent">Founders</span>
+        </h2>
+        <p class="section-subtitle">
+          Key figures behind DentUni's vision and leadership.
+        </p>
+      </div>
+
+      <!-- Founders Grid -->
+      <div class="team-grid">
+        <!-- Founder 1 -->
+        <div class="team-card">
+          <div class="team-avatar">
+            <i class="fas fa-user"></i>
+          </div>
+          <h3>Dr. Mariam Khaled Mostafa</h3>
+          <p class="role">Founder & CEO</p>
+          <ul
+            style="
+              list-style: disc;
+              margin-top: 1rem;
+              padding-left: 1.2rem;
+              color: #666;
+            "
+          >
+            <li>Bachelor of Dentistry - Ain Shams University, Class of 2023</li>
+            <li>
+              Former President – Ain Shams University Student Union 2022-2023
+            </li>
+            <li>
+              Former President – Faculty of Dentistry Student Union 2021-2022
+            </li>
+            <li>YLF Leader Batch 3 (Youth Leader Foundation) 2022</li>
+            <li>
+              Former Scientific Committee Head at EADS - Ain Shams University
+            </li>
+            <li>Medical Trainer – HealthSpace Company</li>
+            <li>IT Specialist – Kandil Medical Company</li>
+          </ul>
+        </div>
+
+        <!-- Founder 2 -->
+        <div class="team-card">
+          <div class="team-avatar">
+            <i class="fas fa-user"></i>
+          </div>
+          <h3>Dr. Ali Abouelezz Ali Elsayed</h3>
+          <p class="role">Founder & CEO</p>
+          <ul
+            style="
+              list-style: disc;
+              margin-top: 1rem;
+              padding-left: 1.2rem;
+              color: #666;
+            "
+          >
+            <li>Bachelor of Dentistry - Ain Shams University, Class of 2023</li>
+            <li>
+              Former President – Faculty of Dentistry Student Union 2022-2023
+            </li>
+            <li>YLF Leader Batch 3 (Youth Leader Foundation) 2022</li>
+            <li>Former PR Head at EADS - Ain Shams University</li>
+            <li>
+              Senior Medical Sales Representative at Nanostetic Medical Company
+            </li>
+            <li>6th of October STEM High School for Boys - Class of 2018</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <i
+        alt="DentUni Logo"
+        class="logo-img fa-solid fa-tooth contact-icon"
+        style="color: white; padding-top: 0.3em"
+      ></i>
+      <p>
+        <span class="footer-highlight">DentUni</span> - Hands-on Dental
+        Education
+      </p>
+      <p>Cairo, Egypt | Rooted in Ain Shams University</p>
+      <p style="margin-top: 1.5rem">
+        &copy; 2025 DentUni. All Rights Reserved.
+      </p>
+    </footer>
+
+    <script>
+      function toggleMobileMenu() {
+        const navLinks = document.getElementById("navLinks");
+        navLinks.classList.toggle("active");
+      }
+      document.addEventListener("click", function (event) {
+        const nav = document.querySelector("nav");
+        const navLinks = document.getElementById("navLinks");
+        const mobileBtn = document.querySelector(".mobile-menu-btn");
+
+        if (
+          !nav.contains(event.target) &&
+          navLinks.classList.contains("active")
+        ) {
+          navLinks.classList.remove("active");
+        }
+      });
+    </script>
+  </body>
+</html>
